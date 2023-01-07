@@ -1,7 +1,9 @@
 <?php
-class ProductController{
+class ProductController extends Controller{
     public function index(){
-        echo "This is index of ProductController ";
+        // echo "This is index of ProductController ";
+
+        $this->load->loadview('product.index');
     }
     public function create(){
         echo "This is create of ProductController ";
